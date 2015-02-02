@@ -314,6 +314,10 @@ int main()
 {
     int r;
 
+#if !GLIB_CHECK_VERSION(2,35,0)
+    g_type_init ();
+#endif
+
     GError *error = NULL;
 
     r = libusb_init(NULL);

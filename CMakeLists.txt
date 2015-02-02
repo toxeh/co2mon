@@ -5,7 +5,7 @@ set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -Wall -Wextra")
 
 find_package(PkgConfig)
 pkg_check_modules(LIBUSB REQUIRED libusb-1.0)
-pkg_check_modules(GLIB2 REQUIRED glib-2.0>=2.40)
+pkg_check_modules(GLIB2 REQUIRED glib-2.0>=2.32.4)
 pkg_check_modules(GIO2 REQUIRED gio-2.0)
 
 include_directories(
